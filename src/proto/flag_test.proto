@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package protoflag.proto;
+
+option java_package = "protoflag.proto";
+option java_outer_classname = "FlagTestProto";
+
+message FlagTest {
+    int32 some_number = 1;
+
+    repeated string names = 2;
+
+    Foo Foo = 3;
+}
+
+message Foo {
+    int32 more_number = 1;
+}
